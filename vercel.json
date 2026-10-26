@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "offlinedocs": {
+      "root": "offlinedocs",
+      "framework": "nextjs"
+    },
+    "site": {
+      "root": "site",
+      "framework": "vite"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "site"
+      }
+    }
+  ]
+}
