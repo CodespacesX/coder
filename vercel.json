@@ -3,7 +3,8 @@
   "services": {
     "offlinedocs": {
       "root": "offlinedocs",
-      "framework": "nextjs"
+      "framework": "nextjs",
+			"outputDirectory": "build"
     },
     "site": {
       "root": "site",
